@@ -106,5 +106,8 @@ def menu():
         parcourvilleappelle()
     elif choix == "8":
         print("Au revoir")
+        exit(0)
+    menu()
 
-menu()
+if __name__ == "__main__":
+    menu()
