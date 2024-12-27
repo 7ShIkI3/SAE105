@@ -53,7 +53,7 @@ def ensembleVilles(name, ville:France):
         print(f"{name} is not found in the list.")
         return []
 
-    while len(VillesTrouvees) < 10 * ville.get_rayon() and essais < len(ville.get_listeInfo()):
+    while len(VillesTrouvees) < 100 * ville.get_rayon() and essais < len(ville.get_listeInfo()):
         current_city = ville.get_listeInfo()[essais]
         val = ville.dist_Euclidienne(info_name, current_city)
         if val <= ville.get_rayon():
